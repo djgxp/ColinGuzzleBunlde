@@ -4,7 +4,7 @@ Log Guzzle in Symfony profiler
 
 ## Installation
 
-```composer required maximecolin/guzzle-bundle```
+```composer require maximecolin/guzzle-bundle```
 
 ## Compatibility
 
