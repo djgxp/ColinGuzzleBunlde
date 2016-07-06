@@ -6,6 +6,10 @@ Log Guzzle in Symfony profiler
 
 ```composer required maximecolin/guzzle-bundle```
 
+## Compatibility
+
+Works only with [Guzzle 6](https://github.com/guzzle/guzzle) for now
+
 ## Usage
 
 ```yaml
