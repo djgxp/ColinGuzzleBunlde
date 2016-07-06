@@ -8,7 +8,7 @@ Log Guzzle in Symfony profiler
 
 ## Usage
 
-```
+```yaml
 services:
     your_guzzle_services_id:
         class: GuzzleHttp\Client
