@@ -10,6 +10,9 @@ use Symfony\Component\DependencyInjection\Reference;
 
 class GuzzleCompilerPass implements CompilerPassInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function process(ContainerBuilder $container)
     {
         $taggedServices = $container->findTaggedServiceIds('guzzle.client');
@@ -27,6 +30,9 @@ class GuzzleCompilerPass implements CompilerPassInterface
         }
     }
 
+    /**
+     * @param Definition $definition
+     */
     public function guzzle6(Definition $definition)
     {
         $arguments = count($definition->getArguments());

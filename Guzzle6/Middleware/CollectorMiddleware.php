@@ -9,13 +9,26 @@ use Psr\Http\Message\ResponseInterface;
 
 class CollectorMiddleware
 {
+    /**
+     * @var RequestCollector
+     */
     private $collector;
 
+    /**
+     * CollectorMiddleware constructor.
+     *
+     * @param RequestCollector $collector
+     */
     public function __construct(RequestCollector $collector)
     {
         $this->collector = $collector;
     }
 
+    /**
+     * @param callable $handler
+     *
+     * @return \Closure
+     */
     public function __invoke(callable $handler)
     {
         return function (RequestInterface $request, array $options) use ($handler) {
@@ -33,6 +46,11 @@ class CollectorMiddleware
         };
     }
 
+    /**
+     * @param RequestInterface  $request
+     * @param ResponseInterface $response
+     * @param bool              $success
+     */
     private function collect(RequestInterface $request, ResponseInterface $response, $success)
     {
         $data = new Request(

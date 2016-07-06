@@ -1,0 +1,34 @@
+{
+    "name": "maximecolin/guzzle-bundle",
+    "type": "symfony-bundle",
+    "description": "Log guzzle request in Symfony profiler",
+    "keywords": ["guzzle", "guzzle6", "http", "client", "symfony", "bundle"],
+    "homepage": "https://github.com/maximecolin/GuzzleBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxime Colin",
+            "homepage": "https://github.com/maximecolin"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Colin\\Bundle\\GuzzleBundle\\": "."
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
