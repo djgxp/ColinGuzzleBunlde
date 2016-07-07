@@ -21,7 +21,8 @@
         <service id="colin.guzzle_bundle.middleware.logger" class="Colin\Bundle\GuzzleBundle\Guzzle6\Middleware\LoggerMiddleware">
             <argument type="service" id="logger" />
         </service>
-        <service id="colin.guzzle_bundle.handler_stack" class="GuzzleHttp\HandlerStack" factory-class="GuzzleHttp\HandlerStack" factory-method="create">
+        <service id="colin.guzzle_bundle.handler_stack" class="GuzzleHttp\HandlerStack">
+            <factory class="GuzzleHttp\HandlerStack" method="create" />
             <call method="push">
                 <argument type="service" id="colin.guzzle_bundle.middleware.logger" />
             </call>
