@@ -9,7 +9,7 @@
         <!-- Data collector -->
         <service id="colin.guzzle_bundle.data_collector.guzzle_data_collector" class="Colin\Bundle\GuzzleBundle\DataCollector\GuzzleDataCollector">
             <argument type="service" id="colin.guzzle_bundle.data_collector.request_collector" />
-            <tag name="data_collector" template="ColinGuzzleBundle:Collector:guzzle.html.twig" id="guzzle" />
+            <tag name="data_collector" template="@ColinGuzzle/Collector/guzzle.html.twig" id="guzzle" />
         </service>
         <service id="colin.guzzle_bundle.data_collector.request_collector" class="Colin\Bundle\GuzzleBundle\DataCollector\RequestCollector">
         </service>
