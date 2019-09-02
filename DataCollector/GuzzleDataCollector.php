@@ -111,4 +111,9 @@ class GuzzleDataCollector extends DataCollector
     {
         return 'guzzle';
     }
+    
+    public function reset()
+    {
+        $this->data = [];
+    }
 }
