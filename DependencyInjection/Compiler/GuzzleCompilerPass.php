@@ -1,8 +1,8 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\DependencyInjection\Compiler;
+namespace Djgxp\Bundle\GuzzleBundle\DependencyInjection\Compiler;
 
-use Colin\Bundle\GuzzleBundle\DependencyInjection\Exception\VersionNotSupportedException;
+use Djgxp\Bundle\GuzzleBundle\DependencyInjection\Exception\VersionNotSupportedException;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
@@ -38,17 +38,17 @@ class GuzzleCompilerPass implements CompilerPassInterface
         $arguments = count($definition->getArguments());
 
         if ($arguments === 0) {
-            $definition->addArgument(['handler' => new Reference('colin.guzzle_bundle.handler_stack')]);
+            $definition->addArgument(['handler' => new Reference('djgxp.guzzle_bundle.handler_stack')]);
         } elseif ($arguments === 1) {
             $argument = $definition->getArgument(0);
 
             if (is_array($argument)) {
-                $definition->replaceArgument(1, array_merge($argument, ['handler' => new Reference('colin.guzzle_bundle.handler_stack')]));
+                $definition->replaceArgument(1, array_merge($argument, ['handler' => new Reference('djgxp.guzzle_bundle.handler_stack')]));
             } else {
-                $definition->addArgument(['handler' => new Reference('colin.guzzle_bundle.handler_stack')]);
+                $definition->addArgument(['handler' => new Reference('djgxp.guzzle_bundle.handler_stack')]);
             }
         } elseif ($arguments === 2) {
-            $definition->replaceArgument(1, array_merge($definition->getArgument(1), ['handler' => new Reference('colin.guzzle_bundle.handler_stack')]));
+            $definition->replaceArgument(1, array_merge($definition->getArgument(1), ['handler' => new Reference('djgxp.guzzle_bundle.handler_stack')]));
         }
     }
 }

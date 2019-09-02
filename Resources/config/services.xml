@@ -7,27 +7,27 @@
     <services>
 
         <!-- Data collector -->
-        <service id="colin.guzzle_bundle.data_collector.guzzle_data_collector" class="Colin\Bundle\GuzzleBundle\DataCollector\GuzzleDataCollector">
-            <argument type="service" id="colin.guzzle_bundle.data_collector.request_collector" />
-            <tag name="data_collector" template="@ColinGuzzle/Collector/guzzle.html.twig" id="guzzle" />
+        <service id="djgxp.guzzle_bundle.data_collector.guzzle_data_collector" class="Djgxp\Bundle\GuzzleBundle\DataCollector\GuzzleDataCollector">
+            <argument type="service" id="djgxp.guzzle_bundle.data_collector.request_collector" />
+            <tag name="data_collector" template="@DjgxpGuzzle/Collector/guzzle.html.twig" id="guzzle" />
         </service>
-        <service id="colin.guzzle_bundle.data_collector.request_collector" class="Colin\Bundle\GuzzleBundle\DataCollector\RequestCollector">
+        <service id="djgxp.guzzle_bundle.data_collector.request_collector" class="Djgxp\Bundle\GuzzleBundle\DataCollector\RequestCollector">
         </service>
 
         <!-- Guzzle middleware -->
-        <service id="colin.guzzle_bundle.middleware.collector" class="Colin\Bundle\GuzzleBundle\Guzzle6\Middleware\CollectorMiddleware">
-            <argument type="service" id="colin.guzzle_bundle.data_collector.request_collector" />
+        <service id="djgxp.guzzle_bundle.middleware.collector" class="Djgxp\Bundle\GuzzleBundle\Guzzle6\Middleware\CollectorMiddleware">
+            <argument type="service" id="djgxp.guzzle_bundle.data_collector.request_collector" />
         </service>
-        <service id="colin.guzzle_bundle.middleware.logger" class="Colin\Bundle\GuzzleBundle\Guzzle6\Middleware\LoggerMiddleware">
+        <service id="djgxp.guzzle_bundle.middleware.logger" class="Djgxp\Bundle\GuzzleBundle\Guzzle6\Middleware\LoggerMiddleware">
             <argument type="service" id="logger" />
         </service>
-        <service id="colin.guzzle_bundle.handler_stack" class="GuzzleHttp\HandlerStack">
+        <service id="djgxp.guzzle_bundle.handler_stack" class="GuzzleHttp\HandlerStack">
             <factory class="GuzzleHttp\HandlerStack" method="create" />
             <call method="push">
-                <argument type="service" id="colin.guzzle_bundle.middleware.logger" />
+                <argument type="service" id="djgxp.guzzle_bundle.middleware.logger" />
             </call>
             <call method="push">
-                <argument type="service" id="colin.guzzle_bundle.middleware.collector" />
+                <argument type="service" id="djgxp.guzzle_bundle.middleware.collector" />
             </call>
         </service>
     </services>

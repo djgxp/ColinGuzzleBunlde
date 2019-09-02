@@ -1,6 +1,6 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\DependencyInjection\Exception;
+namespace Djgxp\Bundle\GuzzleBundle\DependencyInjection\Exception;
 
 class VersionNotSupportedException extends \Exception
 {

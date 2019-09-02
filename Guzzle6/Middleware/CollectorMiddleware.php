@@ -1,9 +1,9 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\Guzzle6\Middleware;
+namespace Djgxp\Bundle\GuzzleBundle\Guzzle6\Middleware;
 
-use Colin\Bundle\GuzzleBundle\DataCollector\Request;
-use Colin\Bundle\GuzzleBundle\DataCollector\RequestCollector;
+use Djgxp\Bundle\GuzzleBundle\DataCollector\Request;
+use Djgxp\Bundle\GuzzleBundle\DataCollector\RequestCollector;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

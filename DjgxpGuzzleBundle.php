@@ -1,12 +1,12 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle;
+namespace Djgxp\Bundle\GuzzleBundle;
 
-use Colin\Bundle\GuzzleBundle\DependencyInjection\Compiler\GuzzleCompilerPass;
+use Djgxp\Bundle\GuzzleBundle\DependencyInjection\Compiler\GuzzleCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ColinGuzzleBundle extends Bundle
+class DjgxpGuzzleBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {

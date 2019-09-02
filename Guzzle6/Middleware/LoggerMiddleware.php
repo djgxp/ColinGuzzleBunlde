@@ -1,6 +1,6 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\Guzzle6\Middleware;
+namespace Djgxp\Bundle\GuzzleBundle\Guzzle6\Middleware;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

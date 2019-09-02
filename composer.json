@@ -3,12 +3,12 @@
     "type": "symfony-bundle",
     "description": "Log guzzle request in Symfony profiler",
     "keywords": ["guzzle", "guzzle6", "http", "client", "symfony", "bundle"],
-    "homepage": "https://github.com/maximecolin/GuzzleBundle",
+    "homepage": "https://github.com/djgxp/GuzzleBundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Maxime Colin",
-            "homepage": "https://github.com/maximecolin"
+            "name": "Djgxp",
+            "homepage": "https://github.com/djgxp"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Colin\\Bundle\\GuzzleBundle\\": "."
+            "Djgxp\\Bundle\\GuzzleBundle\\": "."
         }
     },
     "prefer-stable": true,

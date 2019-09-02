@@ -1,6 +1,6 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\DependencyInjection;
+namespace Djgxp\Bundle\GuzzleBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('colin_guzzle');
+        $rootNode = $treeBuilder->root('djgxp_guzzle');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

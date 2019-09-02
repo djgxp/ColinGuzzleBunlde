@@ -1,10 +1,10 @@
-# ColinGuzzleBunlde
+# DjgxpGuzzleBundle
 
 Log Guzzle in Symfony profiler
 
 ## Installation
 
-```composer require maximecolin/guzzle-bundle```
+```composer require djgxp/guzzle-bundle```
 
 ## Compatibility
 

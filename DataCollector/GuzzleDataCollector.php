@@ -1,6 +1,6 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\DataCollector;
+namespace Djgxp\Bundle\GuzzleBundle\DataCollector;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

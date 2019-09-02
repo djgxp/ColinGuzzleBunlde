@@ -1,6 +1,6 @@
 <?php
 
-namespace Colin\Bundle\GuzzleBundle\DataCollector;
+namespace Djgxp\Bundle\GuzzleBundle\DataCollector;
 
 class Request
 {
