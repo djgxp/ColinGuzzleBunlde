@@ -8,7 +8,7 @@ Log Guzzle in Symfony profiler
 
 ## Compatibility
 
-Works only with [Guzzle 6](https://github.com/guzzle/guzzle) for now
+Works with [Guzzle 6](https://github.com/guzzle/guzzle)
 
 ## Usage
 
