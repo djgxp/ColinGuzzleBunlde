@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Log guzzle request in Symfony profiler",
     "keywords": ["guzzle", "guzzle6", "http", "client", "symfony", "bundle"],
-    "homepage": "https://github.com/djgxp/GuzzleBundle",
+    "homepage": "https://github.com/djgxp/DjgxpGuzzleBundle",
     "license": "MIT",
     "authors": [
         {
