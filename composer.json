@@ -1,5 +1,5 @@
 {
-    "name": "maximecolin/guzzle-bundle",
+    "name": "djgxp/guzzle-bundle",
     "type": "symfony-bundle",
     "description": "Log guzzle request in Symfony profiler",
     "keywords": ["guzzle", "guzzle6", "http", "client", "symfony", "bundle"],
