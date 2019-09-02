@@ -4,7 +4,7 @@ Log Guzzle in Symfony profiler
 
 ## Installation
 
-```composer require djgxp/guzzle-bundle```
+```composer require djgxp/guzzle-bundle@dev```
 
 ## Compatibility
 
